@@ -2,7 +2,7 @@ Summary:	GNOME program for creating CDs and DVDs
 Summary(pl):	Program dla GNOME do tworzenia p³yt CD i DVD
 Name:		graveman
 Version:	0.3.8
-Release:	1
+Release:	2
 License:	GPL v.2
 Group:		X11/Applications/Multimedia
 Source0:	http://savannah.nongnu.org/download/graveman/%{name}-%{version}.tar.bz2
@@ -19,10 +19,6 @@ BuildRequires:	libmad-devel >= 0.15
 BuildRequires:	libtool
 BuildRequires:	libvorbis-devel
 BuildRequires:	pkgconfig
-Requires:	cdrtools
-Requires:	cdrtools-mkisofs
-Requires:	cdrtools-readcd
-Requires:	dvd+rw-tools
 Requires:	sox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -54,6 +50,16 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
+
+%post
+%banner %{name} -e << EOF
+Suggested packages for use with graveman:
+- cdrtools
+- cdrtools-mkisofs
+- cdrtools-readcd
+and for DVD recording
+- dvd+rw-tools
+EOF
 
 %clean
 rm -rf $RPM_BUILD_ROOT
