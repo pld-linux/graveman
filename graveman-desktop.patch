@@ -1,0 +1,9 @@
+diff -aurN graveman-0.3.8.orig/desktop/graveman.desktop.in graveman-0.3.8/desktop/graveman.desktop.in
+--- graveman-0.3.8.orig/desktop/graveman.desktop.in	2005-02-12 00:47:07.000000000 +0100
++++ graveman-0.3.8/desktop/graveman.desktop.in	2005-03-01 18:08:08.741108952 +0100
+@@ -34,4 +34,4 @@
+ Terminal=false
+ Type=Application
+ Icon=graveman48.png
+-Categories=Application;Utility;
++Categories=GTK;GNOME;Utility;DiscBurning;
