@@ -3,7 +3,7 @@ Summary(pl):	Program dla GNOME do tworzenia p³yt CD i DVD
 Name:		graveman
 Version:	0.3.8
 Release:	2
-License:	GPL v.2
+License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://savannah.nongnu.org/download/graveman/%{name}-%{version}.tar.bz2
 # Source0-md5:	7d40e0559f0f2c9d733196c22dd9a2d4
@@ -19,6 +19,7 @@ BuildRequires:	libmad-devel >= 0.15
 BuildRequires:	libtool
 BuildRequires:	libvorbis-devel
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.177
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
