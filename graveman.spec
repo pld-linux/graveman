@@ -19,7 +19,6 @@ BuildRequires:	libmad-devel >= 0.15
 BuildRequires:	libtool
 BuildRequires:	libvorbis-devel
 BuildRequires:	pkgconfig
-Requires:	sox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -54,11 +53,14 @@ rm -rf $RPM_BUILD_ROOT
 %post
 %banner %{name} -e << EOF
 Suggested packages for use with graveman:
+for CD recording
 - cdrtools
 - cdrtools-mkisofs
 - cdrtools-readcd
-and for DVD recording
+for DVD recording
 - dvd+rw-tools
+for operations on audio files
+- sox
 EOF
 
 %clean
