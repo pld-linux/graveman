@@ -5,7 +5,7 @@ Version:	0.3.8
 Release:	1
 License:	GPL v.2
 Group:		X11/Applications/Multimedia
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	http://savannah.nongnu.org/download/graveman/%{name}-%{version}.tar.bz2
 # Source0-md5:	7d40e0559f0f2c9d733196c22dd9a2d4
 Patch0:		%{name}-desktop.patch
 URL:		http://www.nongnu.org/graveman/
