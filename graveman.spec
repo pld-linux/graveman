@@ -1,12 +1,12 @@
 Summary:	GNOME program for creating CDs and DVDs
 Summary(pl):	Program dla GNOME do tworzenia p³yt CD i DVD
 Name:		graveman
-Version:	0.3.9
+Version:	0.3.10
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
-Source0:	http://savannah.nongnu.org/download/graveman/%{name}-%{version}.tar.bz2
-# Source0-md5:	a00ffea1865639f13edeeb7b3e96a901
+Source0:	http://savannah.nongnu.org/download/graveman/%{name}-%{version}-2.tar.bz2
+# Source0-md5:	58ab06707bfcb48ccfa04555466b42e3
 Patch0:		%{name}-desktop.patch
 URL:		http://www.nongnu.org/graveman/
 BuildRequires:	autoconf
@@ -76,4 +76,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_desktopdir}/*
+%{_mandir}/
 %{_pixmapsdir}/*
