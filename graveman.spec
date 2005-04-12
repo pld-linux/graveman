@@ -1,5 +1,5 @@
-Summary:	GNOME program for creating CDs and DVDs
-Summary(pl):	Program dla GNOME do tworzenia p³yt CD i DVD
+Summary:	GTK program for creating CDs and DVDs
+Summary(pl):	Oparty o GTK program do tworzenia p³yt CD i DVD
 Name:		graveman
 Version:	0.3.10
 Release:	1
