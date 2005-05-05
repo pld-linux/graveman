@@ -15,9 +15,11 @@ BuildRequires:	automake
 BuildRequires:	flac-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.4.0
+BuildRequires:	intltool
 BuildRequires:	libglade2-devel
 BuildRequires:	libid3tag-devel >= 0.15
 BuildRequires:	libmad-devel >= 0.15
+BuildRequires:	libmng-devel
 BuildRequires:	libtool
 BuildRequires:	libvorbis-devel
 BuildRequires:	pkgconfig
