@@ -1,42 +1,42 @@
-diff -urN graveman-0.3.11.orig/configure.in graveman-0.3.11/configure.in
---- graveman-0.3.11.orig/configure.in	2005-05-05 08:48:28.000000000 +0200
-+++ graveman-0.3.11/configure.in	2005-05-05 08:48:56.000000000 +0200
-@@ -241,7 +241,7 @@
+diff -aurN graveman-0.3.12.orig/configure.in graveman-0.3.12/configure.in
+--- graveman-0.3.12.orig/configure.in	2005-05-17 03:16:33.000000000 +0200
++++ graveman-0.3.12/configure.in	2005-05-17 09:51:38.000000000 +0200
+@@ -251,7 +251,7 @@
  fi
  
  dnl nls support
--GRAVEMAN_LANG="cs de es fr it lt nl no pl pt_BR ru sv"
-+GRAVEMAN_LANG="cs de es fr it lt nb nl pl pt_BR ru sv"
+-GRAVEMAN_LANG="cs de es fr hu it lt nl no pl pt_BR ru sv"
++GRAVEMAN_LANG="cs de es fr hu it lt nb nl pl pt_BR ru sv"
  AC_ARG_ENABLE(nls, , [
  if test "A$enableval" = "Ayes"; then
   	ALL_LINGUAS="$GRAVEMAN_LANG"
-diff -urN graveman-0.3.11.orig/desktop/graveman.desktop.in graveman-0.3.11/desktop/graveman.desktop.in
---- graveman-0.3.11.orig/desktop/graveman.desktop.in	2005-05-05 08:48:28.000000000 +0200
-+++ graveman-0.3.11/desktop/graveman.desktop.in	2005-05-05 08:50:45.000000000 +0200
+diff -aurN graveman-0.3.12.orig/desktop/graveman.desktop.in graveman-0.3.12/desktop/graveman.desktop.in
+--- graveman-0.3.12.orig/desktop/graveman.desktop.in	2005-05-09 08:22:49.000000000 +0200
++++ graveman-0.3.12/desktop/graveman.desktop.in	2005-05-17 09:53:02.000000000 +0200
 @@ -12,7 +12,7 @@
  Name[pl]=Graveman
  Name[it]=Graveman
  Name[sv]=Graveman
 -Name[no]=Graveman
 +Name[nb]=Graveman
+ Name[hu]=Graveman
  GenericName=CD Creator
  GenericName[cs]=CD/DVD vypalovací program
- GenericName[de]=CD ersteller
-@@ -25,7 +25,7 @@
+@@ -26,7 +26,7 @@
  GenericName[pl]=Program do nagrywania płyty CD/DVD
  GenericName[it]=Creatore di CD
  GenericName[sv]=CD Skapare
 -GenericName[no]=CD Brenner
 +GenericName[nb]=CD Brenner
+ GenericName[hu]=CD/DVD íróprogram
  Comment=Create and copy data and audio CD
  Comment[cs]=Vytváří a kopíruje datová a hudební CD/DVD
- Comment[de]=erstellt und kopiert Daten und Audio-CDs
-@@ -38,7 +38,7 @@
+@@ -40,7 +40,7 @@
  Comment[pl]=Pozwala tworzyć i kopiować płyty CD/DVD z danymi i muzyką
  Comment[it]=Crea e copia CD dati, audio e DVD
  Comment[sv]=Skapa och kopiera data och ljud CD
 -Comment[no]=Lage og kopiere data og lyd CD/DVD
 +Comment[nb]=Lage og kopiere data og lyd CD/DVD
+ Comment[hu]=Adat és Audio CD/DVD létrehozása és másolása egyszerűen
  Exec=graveman
  Terminal=false
- Type=Application
