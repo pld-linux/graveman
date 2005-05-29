@@ -1,12 +1,13 @@
 Summary:	GTK+2 program for creating CDs and DVDs
 Summary(pl):	Oparty o GTK+2 program do tworzenia p³yt CD i DVD
 Name:		graveman
-Version:	0.3.12
+Version:	0.3.12.3
+%define fver	0.3.12-3
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
-Source0:	http://graveman.tuxfamily.org/sources/%{name}-%{version}.tar.bz2
-# Source0-md5:	6dc2c25bfdf47a3cdb6fb445a778b10c
+Source0:	http://graveman.tuxfamily.org/sources/%{name}-%{fver}.tar.bz2
+# Source0-md5:	a3eacedeebcd354bfeb424385c455dfd
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-locale-names.patch
 URL:		http://graveman.tuxfamily.org/
@@ -35,7 +36,7 @@ GRAVEMAN jest nak³adk± na cdrtools (cdrecord, readcd, mkisofs),
 dvd+rw-tools i sox.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{fver}
 %patch0 -p1
 %patch1 -p1
 
