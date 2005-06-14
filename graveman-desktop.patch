@@ -6,4 +6,4 @@ diff -aurN graveman-0.3.8.orig/desktop/graveman.desktop.in graveman-0.3.8/deskto
  Type=Application
  Icon=graveman48.png
 -Categories=Application;Utility;
-+Categories=GTK;GNOME;Utility;DiscBurning;
++Categories=GTK;AudioVideo;DiscBurning;
