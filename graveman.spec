@@ -3,7 +3,7 @@ Summary(pl):	Oparty o GTK+2 program do tworzenia p³yt CD i DVD
 Name:		graveman
 Version:	0.3.12.4
 %define	fver	0.3.12-4
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://graveman.tuxfamily.org/sources/%{name}-%{fver}.tar.bz2
@@ -11,6 +11,7 @@ Source0:	http://graveman.tuxfamily.org/sources/%{name}-%{fver}.tar.bz2
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-locale-names.patch
 Patch2:		%{name}-Makefile_cleanup.patch
+Patch3:		%{name}-membug.patch
 URL:		http://graveman.tuxfamily.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -41,6 +42,7 @@ dvd+rw-tools i sox.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 mv -f po/{no,nb}.po
 
