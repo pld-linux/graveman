@@ -1,5 +1,5 @@
 Summary:	GTK+2 program for creating CDs and DVDs
-Summary(pl):	Oparty o GTK+2 program do tworzenia p≥yt CD i DVD
+Summary(pl.UTF-8):   Oparty o GTK+2 program do tworzenia p≈Çyt CD i DVD
 Name:		graveman
 Version:	0.3.12.5
 %define	fver	0.3.12-5
@@ -31,8 +31,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GRAVEMAN is a frontend for cdrtools (cdrecord, readcd, mkisofs),
 dvd+rw-tools and sox.
 
-%description -l pl
-GRAVEMAN jest nak≥adk± na cdrtools (cdrecord, readcd, mkisofs),
+%description -l pl.UTF-8
+GRAVEMAN jest nak≈ÇadkƒÖ na cdrtools (cdrecord, readcd, mkisofs),
 dvd+rw-tools i sox.
 
 %prep
